@@ -42,4 +42,74 @@ public class DeleteElement {
             System.out.print(aray[i] + "\t");
         }
     }
+
+
+
+//    Cách 2
+//    public static int[] deleteByIndex(int a[], int index){
+////        tạo ra 1 mảng mới tên a1 (n-1) phần tử
+//        int n = a.length-1;
+//        int a1[] = new int[n];
+////        duyệt mảng từ (0-index)
+////        a1[i] = a[i]
+//        for (int i = 0; i < index; i++) {
+//            a1[i] = a[i];
+//        }
+////        duyệt mảng từ (index+1 -> length)
+////        a1[i-1] = a[i]
+//        for (int i = index+1; i < a.length; i++) {
+//            a1[i-1]=a[i];
+//        }
+//        return a1;
+//    }
+
+
+
+//    Cách3
+//    public static void main(String[] args) {
+//        int size;
+//        int[] array;
+//        Scanner scanner=new Scanner(System.in);
+//        do{
+//            System.out.println("Enter a size:");
+//            size=scanner.nextInt();
+//            if(size>20){
+//                System.out.println("Size should not exceed 20");
+//            }
+//        }while (size>20);
+//        array=new int[size];
+//        for (int i = 0; i <array.length ; i++) {
+//            System.out.println("Enter element "+(i+1)+':');
+//            array[i]=scanner.nextInt();
+//        }
+//        System.out.print("Array: ");
+//        for (int a:array) {
+//            System.out.print(a+"\t");
+//        }
+//        System.out.print("\n Enter X:");
+//        int X=scanner.nextInt();
+//        int count=0;
+//        for (int i = 0; i < array.length; i++) {
+//            if(array[i]==X){
+//                count++;
+//            }
+//        }
+//        if (count!=0){
+//            size=size-count;
+//            int[] newArray=new int[size];
+//            for (int i = 0,j=0; i < array.length ; i++,j++) {
+//                if(array[i]==X){
+//                    j--;
+//                    continue;
+//                }
+//                newArray[j]=array[i];
+//            }
+//            System.out.print("New Array: ");
+//            for (int a:newArray) {
+//                System.out.print(a+"\t");
+//            }
+//        }else {
+//            System.out.println("No X:");
+//        }
+//    }
 }

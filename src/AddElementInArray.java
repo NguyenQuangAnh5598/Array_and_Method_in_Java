@@ -44,4 +44,23 @@ public class AddElementInArray {
             System.out.print(element + "\t");
         }
     }
+//    Cách 2
+//    public static int[] addNewElement(int[] a, int newValue, int index){
+//        if (index<0 || index > a.length) return a;
+//        //        1.Tạo ra 1 mảng mới (n+1) phần tử
+//        int n = a.length +1;
+//        int a1[] = new int[n];
+////        2. Duyệt mang (0-index) gán a1[i] = a[i]
+//        for (int i = 0; i < index; i++) {
+//            a1[i] = a[i];
+//        }
+////        3. Duyệt mảng (index) - length a
+////        a1[i+1] = a[i]
+//        for (int i = index; i < a.length; i++) {
+//            a1[i+1] = a[i];
+//        }
+////        4. a1[index] = giá trị mới
+//        a1[index] = newValue;
+//        return a1;
+//    }
 }
